@@ -1,0 +1,243 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*about section+*/
+.about{
+    background: #fff;
+}
+
+/*team section styling*/
+.team{
+    /*display: flex;*/
+    background: url("images/banner.jpg") no-repeat center;
+    /*height: 100vh;*/
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.team .title::before{
+    background: #fff;
+}
+
+.team .title::after{
+    color: #fff;
+    background: #001322;
+    content: "rock together";
+}
+
+.team .team-content{
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.team .team-content .info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.team .team-content .info .left{
+    width: 30%;
+    text-align: right;
+}
+
+.team .team-content .info img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.team .team-content .info .right{
+    width: 55%;
+}
+
+.team .team-content .info .right p{
+    text-align: justify;
+}
+
+
+.team-content .main-card{
+    width: 100%;
+    display: flex;
+    margin: 20px 0 50px 0;
+    justify-content: space-evenly;
+    transition: all 1s ease;
+    background: transparent;
+}
+
+.main-card .item{
+    background: #fff;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 24px;
+    transition: all 0.4s ease;
+}
+
+.main-card .item:hover{
+    transform: translateY(-15px);
+}
+
+.item .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.item .content .img{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 14px;
+    border-radius: 50%;
+}
+
+.item .content .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #7bb7e4;
+    border: 2px solid #1a3616;
+}
+
+.item .content .details .name{
+    font-size: 20px;
+    font-weight: 500;
+    color: #1a3616;
+}
+
+.item .content .details .job{
+    font-size: 20px;
+    color: #3f7539;
+}
+
+.item .content .media{
+    display: flex;
+}
+
+.item .content .media a{
+    height: 35px;
+    width: 35px;
+    color: #fff;
+    background: #1a3616;
+    margin: 4px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 33px;
+    font-size: 18px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.item .content .media a:hover{
+    border-color: #1a3616;
+    color: #1a3616;
+    background: #fff;
+}
+
+/*owl styling*/
+.owl-nav{
+    position: relative;
+    top: -50%;
+}
+.owl-prev{
+    position: absolute;
+    left: 0;
+}
+.owl-next{
+    position: absolute;
+    right: 0;
+}
+.owl-nav span{
+    font-size: 40px;
+}
+
+
+@media (max-width: 947px) {
+    .team .team-content .info .left{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .team .team-content .info .left img{
+        width: 180px;
+        height: auto;
+    }
+    .team .team-content .info .right{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .team .team-content .info .left img{
+        width: 150px;
+        height: auto;
+    }
+    .item .content .details .name{
+        font-size: 18px;
+    }
+    .item .content .details .job{
+        font-size: 18px;
+    }
+    .item .content .media a{
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    /*
+    .main-card .cards .card{
+        width: 100%;
+    }*/
+    .info .right .text{
+        font-size: 16px;
+    }
+    .info .right p{
+        font-size: 14px;
+    }
+    .item .content .details .name{
+        font-size: 16px;
+    }
+    .item .content .details .job{
+        font-size: 16px;
+    }
+    .item .content .media a{
+        width: 25px;
+        height: 25px;
+        line-height: 22px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 374px) {
+    .info .right .text{
+        font-size: 14px;
+    }
+    .info .right p{
+        font-size: 12px;
+    }
+    .item .content .details .name{
+        font-size: 14px;
+    }
+    .item .content .details .job{
+        font-size: 14px;
+    }
+}
